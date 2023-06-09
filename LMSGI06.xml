@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+ <tienda>
+ <productos>
+		<producto cod="P02">
+			<nombre>Disco duro SSD</nombre>
+			<precio moneda="EUR">320</precio>
+		</producto>
+		<producto cod="P05">
+			<nombre>Teclado</nombre>
+			<precio moneda="EUR">30</precio>
+		</producto>
+		<producto cod="P06">
+			<nombre>NAS</nombre>
+			<precio moneda="EUR">400</precio>
+		</producto>
+		<producto cod="P15">
+			<nombre>Kit soldadura</nombre>
+			<precio moneda="EUR">30</precio>
+		</producto>
+		<producto cod="P10">
+			<nombre>Apple mini</nombre>	
+			<precio moneda="EUR">550</precio>
+		</producto>
+		<producto cod="P11">
+			<nombre>Ratón</nombre>
+			<precio moneda="EUR">10</precio>
+		</producto>
+	</productos>	
+	<clientes>
+		<cliente cod="U300111">
+            <nombre>Manuel Moreno</nombre>
+            <telefono>607234125</telefono>
+        </cliente>
+        <cliente cod="U120711">
+			<nombre>Pedro Rojas</nombre>
+            <telefono>607234125</telefono>
+		</cliente>
+		 <cliente cod="U030512">
+			<nombre>Pedro Rodríguez</nombre>
+            <telefono>608822173</telefono>
+		</cliente>
+		 <cliente cod="U120712">
+			<nombre>Nitta Layo</nombre>
+            <telefono>666588045</telefono>
+		</cliente>
+    </clientes>
+	<compras>
+        <cantidad producto="P02" cliente="U300111" fechacompra="12/01/2014">5</cantidad>
+        <cantidad producto="P05" cliente="U300111" fechacompra="25/12/2014">3</cantidad>
+		<cantidad producto="P05" cliente="U120711" fechacompra="25/12/2014">1</cantidad>
+        <cantidad producto="P02" cliente="U120711" fechacompra="05/07/2014">7</cantidad>
+        <cantidad producto="P10" cliente="U120711" fechacompra="03/11/2014">2</cantidad>
+        <cantidad producto="P05" cliente="U030512" fechacompra="30/04/2014">2</cantidad>
+        <cantidad producto="P06" cliente="U120712" fechacompra="20/04/2014">3</cantidad>
+		<cantidad producto="P02" cliente="U120712" fechacompra="21/04/2014">2</cantidad>
+		<cantidad producto="P10" cliente="U120712" fechacompra="22/04/2014">1</cantidad>
+    </compras>
+	<empleados>
+		<empleado cod="B">
+			<nombre>Juan</nombre>
+			<direccion>Plaza Mayor, 1</direccion>
+			<localidad>Linares</localidad>
+			<provincia>Jaén</provincia>
+			<salario unidad="Euros">1800</salario>
+		</empleado>
+		<empleado cod="B">
+			<nombre>Pepe</nombre>
+			<direccion>Calle Nápoles, 1</direccion>
+			<localidad>Algeciras</localidad>
+			<provincia>Cádiz</provincia>
+			<salario unidad="Euros">1100</salario>
+		</empleado>
+		<empleado cod="A">
+			<nombre>Víctor</nombre>
+			<direccion>Calle Ancha, 34</direccion>
+			<localidad>Jaén</localidad>
+			<provincia>Jaén</provincia>
+			<salario unidad="Euros">500</salario>
+		</empleado>
+		<empleado cod="A">
+			<nombre>Luisa</nombre>
+			<direccion>Calle Cerezo, 24</direccion>
+			<localidad>Granada</localidad>
+			<provincia>Granada</provincia>
+			<salario unidad="Euros">1450</salario>
+		</empleado>
+		<empleado cod="A">
+			<nombre>Pedro</nombre>
+			<direccion>Calle Alerce, 2</direccion>
+			<localidad>El Viso del Alcor</localidad>
+			<provincia>Sevilla</provincia>
+			<salario unidad="Euros">1050</salario>
+		</empleado>
+		<empleado cod="A">
+			<nombre>Andrés</nombre>
+			<direccion>Calle Giralda, s/n</direccion>
+			<localidad>Sevilla</localidad>
+			<provincia>Sevilla</provincia>
+			<salario unidad="Euros">700</salario>
+		</empleado>
+		<empleado cod="C">
+			<nombre>María</nombre>
+			<direccion>Calle Mayor, 3</direccion>
+			<localidad>Guadix</localidad>
+			<provincia>Granada</provincia>
+			<salario unidad="Euros">1600</salario>
+		</empleado>
+	</empleados>
+	<formacion>
+		<curso id="1">
+			<nombre>Android</nombre>
+			<precio cuota="Mensual" moneda="EUR">27</precio>
+			<plazas>20</plazas>
+			<comienzo>20180101</comienzo>
+			<fin>20180401</fin>
+			<profesor>Antonio Berenguel</profesor>
+			<aula>1</aula>
+	  	</curso>
+		<curso id="2">
+			<nombre>iOS</nombre>
+			<precio cuota="Mensual" moneda="EUR">47</precio>
+			<plazas>15</plazas>
+			<comienzo>20180401</comienzo>
+			<fin>20180801</fin>
+			<profesor>Aitor Gómez</profesor>
+			<aula>2</aula>
+	  	</curso>
+		<curso id="3">
+			<nombre>SEM / SEO</nombre>
+			<precio cuota="Mensual" moneda="EUR">37</precio>
+			<plazas>55</plazas>
+			<comienzo>20180801</comienzo>
+			<fin>20181201</fin>
+			<profesor>Manuel Antonio Rodriguez</profesor>
+			<aula>1</aula>
+	  	</curso>
+		<curso id="4">
+			<nombre>Photoshop</nombre>
+			<precio cuota="Mensual" moneda="EUR">99</precio>
+			<plazas>10</plazas>
+			<comienzo>20180801</comienzo>
+			<fin>20181201</fin>
+			<profesor>Manuel Amezcua</profesor>
+			<aula>3</aula>
+	  	</curso>
+		<curso id="5">
+			<nombre>RPAS</nombre>
+			<precio cuota="Mensual" moneda="EUR">749</precio>
+			<plazas>5</plazas>
+			<comienzo>20181201</comienzo>
+			<fin>20191201</fin>
+			<profesor>Aitor Gómez</profesor>
+			<aula>1</aula>
+		</curso>
+	</formacion>
+</tienda>
