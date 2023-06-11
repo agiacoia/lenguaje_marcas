@@ -1,0 +1,291 @@
+/* estilos para las etiquetas */
+
+html{
+  background-color: #FEFAE0;
+}
+
+body {
+    margin: 0px auto;
+    width: 1080px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+header {
+    background-color: #DDA15E ;
+    display: inline-flex;
+    justify-content: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+section {
+  background-color: #DDA15E;
+  margin-top: 20px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 15px;
+  height: 850px;
+  line-height: 1.6;
+}
+
+footer {
+  background-color: #BC6C25;
+  margin-top: 0px;
+  padding: 20px;
+  color: white;
+  text-align: center;
+  line-height: 2;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+nav {
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 65px;
+  margin-right: 10px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #283618;
+}
+
+nav li {
+  float: left;
+  border-right: 1px solid #bbb;
+}
+
+
+nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav li a:hover {
+  background-color: #606C38;
+}
+
+input, select {
+  width: 100%;
+}
+input[type=radio]{
+  width: 15px;
+}
+
+input[type=text],[type=email]{
+  padding: 10px 15px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid #606C38;
+  background: #DDA15E;
+}
+
+select{
+  padding: 10px 15px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #606C38;
+}
+
+textarea{
+  padding: 10px 15px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid #606C38;
+  background: #DDA15E;
+ }
+
+button {
+  background-color: #283618;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  margin: 10px;
+}
+
+button:hover{
+  background-color: #606C38;
+}
+
+/* estilos para las etiquetas de la lista*/
+
+ol.customList{
+    list-style-type: none;    
+}
+
+ol.customList> li{
+    list-style: square;
+    counter-increment: primeraLista;
+}
+
+ol.customList> li.primer_item{
+    margin-bottom: 15px;
+}
+
+ol.customList> li:before{
+    font-weight: bold;
+    content: counter(primeraLista) ". ";
+}
+
+ol.customList> li > ol{
+    list-style-type: none; 
+}
+
+ol.customList> li > ol > li{
+    list-style: none;
+    counter-increment: segundaLista;
+}
+
+ol.customList> li > ol > li:before{
+    font-weight: bold;
+    content: counter(primeraLista) "." counter(segundaLista, lower-alpha) " ";
+}
+
+/* estilos de clases */
+
+.active {
+  background-color: #606C38;
+}
+
+/* estilos de clases active, muestra otro color para el botón activo del menú nav */
+
+.logo {
+  margin: 10px;
+  margin-right: 20px;
+  width: 75px;
+  height: 75px;
+}
+.banner{
+  height: 200px;
+  width: 100%;
+}
+
+/* estilo de clase para la lista ordenada */
+
+.listaContenedor{
+  margin: 0px auto;
+  width: 30%;
+  text-align: left;
+}
+
+/* estilos de clases para la galería de imágenes */
+
+.contenido{
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.imagen-galeria{
+  height: 200px;
+  width: auto;
+  border: 5px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0 0 5px 2px rgba(50, 51, 51, 0.57);
+}
+
+.imagen-galeria:hover {
+  transform: scale(1.2);
+  transition-duration: 0.5s;
+  box-shadow: none;
+}
+
+.galeria {
+  display: grid ;
+  grid-template-columns: auto auto;
+  justify-content: space-evenly;
+  grid-gap: 30px;
+}
+
+.galeria-item { 
+  margin: 0px auto;
+  font-weight: bold;
+}
+
+/* estilo de clases para el formulario de contacto */
+
+.contactoForm {
+    display: flex;
+    margin: 0px auto;
+    width: 80%;
+}
+
+.contactoFormulario {
+  text-align: left;
+  border-left: 1px solid #BC6C25;
+  padding-left: 30px;
+}
+
+.imagen-formulario {
+  height: 150px;
+  margin-right: 30px;
+  padding-top: 10px;
+}
+
+/* estilos de clases de decoración del texto */
+
+.negrita {
+  font-weight: bold;  
+}
+.subrayado {
+  text-decoration: underline;
+}
+.estiloText{
+  padding-left: 150px;
+  padding-right: 150px;
+}
+
+/* estilos de clases para la elección de forma de contacto */
+
+.respuestaVia {
+  display: flex;
+  height: 20px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: flex-start;
+  align-items: flex-start;
+}
+
+/* otros estilos que utilizo en el formulario */
+
+.formItem{
+  min-height: 110px;
+}
+
+.btns{
+  min-height: 50px;
+}
+
+/* estilos de id del menú principal */
+
+#inicio {
+    display: block;
+}
+
+#servicio {
+    display: none;
+}
+
+#contacto {
+    display: none;
+}
+
+/* COMENTARIOS VARIOS: */
+/* como paleta de colores utilice una de 5 colores del siguiente enlace https://coolors.co/606c38-283618-fefae0-dda15e-bc6c25 */
+/* el banner lo diseñe en Canva */
+/* el logo y algunas de las imagenes ya las descargué de internet, de https://pixabay.com y https://www.pexels.com */
+/* los ejemplos de código y los efectos en las imagenes de la galería los tomé de https://www.w3schools.com y de la Unidad 2 */
+/* el ejemplo de js lo tomé de la información de interés de la tarea 2 */
+/* los ejemplos de la lista los tomé de la documentación de la Unidad 2 */
+/* la imágen de creative common lo tomé de la sugerencia de la información de interés */
+/* el ejemplo del formulario de contacto lo tomé de https://www.w3schools.com */
