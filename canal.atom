@@ -1,83 +1,94 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es-es">
-  
-  <!--Los elementos obligatorios son: title, id y updated-->
-  <title type="text">Canal de noticias Atom</title>
-  <id>https://www.llegaya.es/</id>
-  <updated>2023-03-18T11:30:00Z</updated>
 
-  <!--Los elementos recomendados son: author, link-->
-  <link rel="self" type="application/atom+xml" href="https://www.llegaya.es/feed/canal.atom" />
-  <link rel="alternate" type="text/html" href="https://www.llegaya.es/" />
-  <author>
-    <name>Andrea Giacoia</name>
-    <email>agiacoia@gmail.com</email>
-  </author>
-  
-  <!--Categorías-->
-  <category term="paqueteria"/>
-  <category term="envios"/>
-  <category term="transporte urgente"/>
-  <subtitle type="text">Categorías de la empresa de paquetería Llegaya S.L.</subtitle>
-
-  <!--LISTADO DE NOTICIAS-->
-   
-  <!--1º Noticia-->
-  <entry>
-
-    <!--Los elementos obligatorios son: title, id y updated-->
-    <title>Devoluciones Amazon: Cómo devolver un paquete de Amazon</title>
-    <id>https://www.packlink.es/blog/como-devolver-un-paquete-de-amazon</id>
-    <updated>2023-03-17T08:37:13Z</updated>
-
-    <!--Algún elemento recomendado, content-->
-    <content>Las compras online en la plataforma Amazon se han convertido en algo habitual en el día a día de muchas personas y empresas. En Amazon, las devoluciones son otro de los puntos fuertes</content>
-    
-    <!--Como elementos opcional, categoría-->
-    <category term="paquetaria"/>
-  </entry>
-
-  <!-- 2º Noticia -->
-  <entry>
-    
-    <!--Los elementos obligatorios son: title, id y updated-->
-    <title>Adiós al chollo de Aliexpress: así afectará la llegada del IVA a la paquetería internacional</title>
-    <id>https://logistica.cdecomunicacion.es/noticias/sectoriales/45956/aliexpress-llegada-iva-paqueteria-internacional</id>
-    <updated>2021-06-29T09:30:00Z</updated>
-    
-    <!--Elemento recomendados y opcionales: author, link, summary-->
-    <author>
-      <name>Patricia González</name>
-      <email>patricia.gonzalez@cdecomunicacion.es</email>
-    </author>
-    <link rel="alternate" type="text/html" href="https://logistica.cdecomunicacion.es/noticias/sectoriales/45956/aliexpress-llegada-iva-paqueteria-internacional"/>
-    <summary>El cambio es inminente. En poco menos de 48 horas, el comercio online, tal y como lo conocemos, cambiará sus reglas, dejando huella sobre el flujo de mercancías internacional</summary>
-    
-    <!--con enclosure referencio la imagen solicitada-->
-    <link rel="enclosure" href="https://logistica.cdecomunicacion.es/wp-content/webp-express/webp-images/uploads/2022/12/1624960313-paquetera-iva-aduanas-1-1140x641.jpg.webp" type="imagen/jpg"></link>
-    
-    <!--Como elementos opcional, categoría-->
-    <category term="paquetaria"/> 
-  </entry>
-
-  <!-- 3º Noticia -->
-  <entry>
-    
-    <!--Los elementos obligatorios son: title, id y updated-->
-    <title>Denuncian atraso de siete meses en la distribución de paquetería internacional en Cuba</title>
-    <id>https://www.cibercuba.com/</id>
-    <updated>2022-01-17T12:38:00Z</updated>
-    
-    <!--Elemento recomendados y opcionales: link, summary-->
-    <link rel="alternate" type="text/html" href="https://www.cibercuba.com/noticias/2022-01-17-u1-e199370-s27061-denuncian-atraso-siete-meses-distribucion-paqueteria" />
-    <summary>Los cubanos denuncian que las empresas estatales transitarias y Correos de Cuba tienen retrasos en la entrega de paquetería internacional de hasta 7 meses.</summary>
-    
-    <!--con enclosure referencio la imagen solicitada-->
-    <link rel="enclosure" href="https://cdn0.celebritax.com/sites/default/files/styles/watermark_100/public/1642440970-denuncian-atraso-siete-meses-distribucion-paqueteria-internacional-cuba.jpg" type="imagen/jpg"></link>
-   
-    <!--Como elementos opcional, categoría-->
-    <category term="envios"/>
-  </entry>
+	<!--Elementos obligatorios-->
+	
+	<title type="text">Canal de noticias sobre empresas de paquetería</title>
+	<id>http://www.noticiaspaqueteria.com</id>
+	<updated>2023-02-04T13:49:00Z</updated>
+	
+	<!--Elementos recomendados-->
+	
+	<author>
+		<name>Nombre Apellidos</name>
+		<email>micorreo@gmail.com</email>
+	</author>
+	<link rel="self" type="application/atom+xml" href="feed/canal.atom"/>
+	<link rel="alternate" type="text/html" href="http://www.noticiaspaqueteria.com"/>
+	
+	
+	<!--Elementos opcionales-->
+	
+	<category term="paqueteria"/>
+	<category term="envios"/>
+	<category term="transporte urgente"/>
+	
+	<!--Entrada sobre empresa-->
+	
+	<entry>
+		<!--Elementos obligatorios-->
+		
+		<title>MRW Empresa de repartos</title>
+		<id>https://www.mrw.es/mascotas</id>
+		<updated>2023-03-25T14:25:00Z</updated>
+		
+		<!--Elementos recomendados-->
+		
+		<content>https://www.mrw.es/mascotas</content>
+		
+		<!--Elementos opcionales-->
+		
+		<category term="paqueteria"/>
+		<published>2023-01-24T13:00:00Z</published>
+		<contributor>
+			<name>MRW</name>
+			<email>informacion@mrw.es</email>
+		</contributor>
+		
+	</entry>
+	
+	<!--Entrada sobre cómo afectará el IVA a la paquetería internacional-->
+	
+	<entry>
+		<!--Elementos obligatorios-->
+		
+		<title>Efectos del IVA a la paqueteria</title>
+		<id>https://logistica.cdecomunicacion.es/noticias/sectoriales/45956/aliexpress-llegada-iva-paqueteria-internacional</id>
+		<updated>2021-07-01T13:49:00Z</updated>
+		
+		<!--Elementos recomendados-->
+		
+		<link rel="alternate" type="text/html" 
+		href="https://logistica.cdecomunicacion.es/noticias/sectoriales/45956/aliexpress-llegada-iva-paqueteria-internacional"/>
+		<summary>Adiós al chollo de Aliexpress: así afectará la llegada del IVA a la paquetería internacional</summary>
+		<published>2021-06-29T13:49:00Z</published>
+		<link rel="enclosure" 
+		href="https://logistica.cdecomunicacion.es/wp-content/webp-express/webp-images/uploads/2022/12/1624960313-paquetera-iva-aduanas-1-1140x641.jpg.webp"
+		length="30000" type="image/webp"/>
+	
+	</entry>
+	
+	<!--Entrada sobre problemas en la distribución de paquetería internacional-->
+	
+	<entry>
+		<!--Elementos obligatorios-->
+		
+		<title>Atraso de 7 meses de distribucion</title>
+		<id>https://www.cibercuba.com/noticias/2022-01-17-u1-e199370-s27061-denuncian-atraso-siete-meses-distribucion-paqueteria</id>
+		<updated>2022-01-17T12:38:00Z</updated>
+		
+		<!--Elementos recomendados-->
+		
+		<link rel="alternate" type="text/html" 
+		href="https://www.cibercuba.com/noticias/2022-01-17-u1-e199370-s27061-denuncian-atraso-siete-meses-distribucion-paqueteria"/>
+		<summary>Denuncian atraso de siete meses en la distribución de paquetería internacional en Cuba</summary>
+		<published>2022-01-17T12:38:00Z</published>
+		<link rel="enclosure" 
+		href="https://cdn0.celebritax.com/sites/default/files/styles/watermark_100/public/1642440970-denuncian-atraso-siete-meses-distribucion-paqueteria-internacional-cuba.jpg"
+		length="30000" type="image/jpg"/>
+		
+	</entry>
+	
 
 </feed>
