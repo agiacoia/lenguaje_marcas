@@ -1,0 +1,57 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2513
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 EJERCICIO 1\
+<vehiculo>\
+  <marca>Toyota</marca>\
+  <modelo>Proace electric</modelo>\
+  <precio moneda="EUR">97000</precio>\
+</vehiculo>\
+<vehiculo>\
+  <marca>Renault</marca>\
+  <modelo>Kangoo e-tech</modelo>\
+  <precio moneda="EUR">87000</precio>\
+</vehiculo>\
+EJERCICIO 2\
+<repartidor nif="23234234B" zona="D">\
+  <nombre>V\'edctor</nombre>\
+  <telefono>607624122</telefono>\
+  <salario unidad="Euros">1100</salario>\
+</repartidor>\
+EJERCICIO 3\
+<totales>\
+  <flota_vehiculos>5</flota_vehiculos>\
+  <coste_total moneda="EUR">966900</coste_total>\
+  <mas_caro moneda="EUR">539900</mas_caro>\
+</totales>\
+EJERCICIO 4\
+<total_salarios moneda="EUR">2250</total_salarios>\
+EJERCICIO 5\
+<entrega>\
+  <nombre>Mito Pop</nombre>\
+  <paquetes>10</paquetes>\
+  <importe moneda="EUR">210</importe>\
+  <importe_empleados moneda="EUR">105</importe_empleados>\
+</entrega>\
+<entrega>\
+  <nombre>Ton Stone</nombre>\
+  <paquetes>5</paquetes>\
+  <importe moneda="EUR">33</importe>\
+  <importe_empleados moneda="EUR">16.5</importe_empleados>\
+</entrega>\
+<entrega>\
+  <nombre>Pedro Rodr\'edguez</nombre>\
+  <paquetes>2</paquetes>\
+  <importe moneda="EUR">129</importe>\
+  <importe_empleados moneda="EUR">64.5</importe_empleados>\
+</entrega>\
+<entrega>\
+  <nombre>Guillermo L\'f3pez</nombre>\
+  <paquetes>2</paquetes>\
+  <importe moneda="EUR">19</importe>\
+  <importe_empleados moneda="EUR">9.5</importe_empleados>\
+</entrega>}
