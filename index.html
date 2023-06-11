@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<!-- encabecabezado de la página -->
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Este es un proeyecto para el Módulo LMSGI del Ciclo Formativo DAW">
+        <meta name="author" content="Andrea Giacoia Trombotti">
+        <title>Llegaya, s.l.</title>
+        
+        <!--uso código de ejemplo de google fonts y referencio enlace con fuentes para uso general de la página -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+        
+        <!--referencia al archivo con los estilos css --> 
+        <link rel="stylesheet" type="text/css" href="./css/style.css">
+
+        <!--************************** NOTICIAS RSS y Atom ********************************-->
+        <link rel="alternate" href="feed/canal.rss" type="application/rss+xml" title="RSS">
+        <link rel="alternate" href="feed/canal.atom" type="application/atom+xml" title="Atom">
+        <!--************************** NOTICIAS RSS y Atom ********************************-->
+        
+    </head>
+    <body>
+        <header>
+            <!-- logo de la empresa -->
+            <div ><img class="logo" src="./img/logo_llegaya.png"/></div>
+
+            <!-- menu de navegación con 3 ítems, muestra la capa donde estoy parada y el botón activo -->
+            <nav>
+                <ul>
+                    <li id="btnInicio" class="active"><a href="#" onclick="return ShowContent('inicio', 'btnInicio');"> Inicio </a></li>
+                    <li id="btnServicio"><a href="#" onclick="return ShowContent('servicio', 'btnServicio');"> Servicio </a></li>
+                    <li id="btnContacto"><a href="#" onclick="return ShowContent('contacto', 'btnContacto');"> Contacto </a></li>
+                </ul>
+            </nav>
+        </header>
+
+            <!-- contenido total de la página web -->
+        <section>
+
+            <!-- contenido de la capa Inicio -->
+            <div id="inicio" class="contenido">
+                <img class="banner" src="./img/banner_llegaya.png"/>
+                <h1>Empresa de paquetaría Llegaya</h1>
+                <p class="estiloText"> 
+                    Realizamos envíos a más de <span class="negrita subrayado">200 destinos de todo el mundo</span> y somos pioneros ofreciendo soluciones de transporte a aquellas empresas que comercializan sus productos a través de internet, más de 15.000 tiendas online ya confían en nosotros. Nuestros valores diferenciales son la <span class="negrita">Fiabilidad, Calidad, Rapidez, Innovación, Capilaridad, Sostenibilidad y Cercanía.</span>
+                </p>
+                <p>
+                    <span class="negrita">¡¡CONTRATA NUESTROS SERVICIOS Y PRODUCTOS, TE SORPRENDEREMOS!!</span>
+                </p>
+              
+                <!-- Lista ordenada de servicios y productos de la página de inicio-->
+                <h2>Nuestros Servicios y Productos</h2>
+                <div class="listaContenedor">   
+                    
+                    <ol class="customList">
+                        <li class="primer_item">Servicios 
+                            <ol>
+                              <li >Transporte urgente</li>
+                              <li>Transporte ordinario</li>
+                            </ol>
+                       </li>
+                        <li>Productos
+                            <ol >
+                              <li>Paquetes</li>
+                              <li>Sobres</li>
+                            </ol>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+
+            <!-- contenido de la capa Servicios y Productos -->
+            <div id="servicio" class="contenido">
+                <h2>SERVICIOS / PRODUCTOS</h2>
+
+                <h3>Nuestros Servicios y Productos más vendidos</h3>
+             
+                <!-- galería de imagenes con clases que tienen estilos css para mostrarlas con efectos -->                
+                <div class="galeria"> 
+
+                    <div class="galeria-item">
+                        <img class="imagen-galeria" src="./img/servicio_vip.jpg"/>
+                        <h3>SERVICIO VIP</h3>
+                    </div>
+                    
+                    <div class="galeria-item">
+                        <img class="imagen-galeria" src="./img/servicio_urgente.jpg"/>
+                        <h3>SERVICIO URGENTE</h3>
+                    </div>
+
+                    <div class="galeria-item">
+                        <img class="imagen-galeria" src="./img/producto_paquete.png"/>
+                        <h3>PRODUCTO - PAQUETE</h3>
+                    </div>
+
+                    <div class="galeria-item">
+                        <img class="imagen-galeria" src="./img/producto_sobre.jpg"/>
+                        <h3>PRODUCTO - SOBRE</h3>
+                    </div>    
+                </div>                                 
+            </div>
+
+            <!-- contenido de la capa del forumlario de contacto -->
+            <div id="contacto" class="contenido">
+                <div><h2>FORMULARIO DE CONTACTO</h2></div>
+                
+                    <div class="contactoForm">
+
+                        <!-- agrego una imagen para el formulario de contacto -->
+                        <img class="imagen-formulario" src="./img/contacto_formulario.jpg"/>
+                        
+                        <!-- comienza formulario de contacto con los datos que se solicitan al cliente -->
+                        <form class="contactoFormulario">
+                            <label>Nombre:
+                                <input type="text" name="nombre"/>
+                            </label>
+                            <label>Apellidos:
+                                <input type="text" name="apellidos"/>
+                            </label>    
+                            <label for="email">e-mail:
+                                <input type="email" name="correo_electornico"/>
+                            </label>    
+                            <label>Teléfono:
+                                <input type="text" name="telefono"/>
+                            </label>    
+                            <label>Ciudad:
+                                <input type="text" name="ciudad"/>
+                            </label>    
+
+                        <!-- cuadro de comentarios del formulario de contacto -->
+                            <div class="formItem">
+                                <label>Comentarios:
+                                    <textarea rows="2" cols="60"></textarea>
+                                </label>
+                            </div>
+
+                        <!-- selección de forma de contacto, telefónica o vía email -->        
+                            <div class="formItem">    
+                                <span>Desea recibir respuesta por:</span>
+                                <div class="respuestaVia">
+                                    <label for="email"><input type="radio" name="respuesta_via" id="email" value="email"/>e-mail</label>
+                                    <label for="telefono"><input type="radio" name="respuesta_via" id="telefono" value="telefono"/>Teléfono</label>
+                                </div>                   
+                            </div>                   
+
+                        <!-- botones para enviar y borrar el formulario, el de enviar no tiene funcionalidad -->
+                            <div class="formItem btns"> 
+                                <button type="button">Enviar</button>
+                                <button type="reset" >Borrar</button>
+                            </div> 
+                            
+                            <div class="formItem"> 
+                                <p>
+                                    Pulsa el botón de <span class="negrita">"Enviar"</span> para realizar tu solicitud, y el botón <span class="negrita">"Borrar"</span> para limpiar el formulario.
+                                </p>
+                            </div>
+                        </form>    
+                    </div>
+            </div>
+        </section>
+
+        <!--footer de la página, datos de la empresa y enlace a los creative common con el logo de los mismos-->
+        <footer>
+            <div> Llegaya S.L. | Calle Carlos Quijano N° 29 - CP. 12053 | Málaga - España</div>
+            <div> Tel: 693054445 | contacto@llegaya.es </div>
+            <div> Andrea Giacoia Trombotti </div>
+            <br>
+            <div> 
+                <a href="https://www.upo.es/biblioteca/servicios/pubdig/propiedadintelectual/tutoriales/derechos_autor/htm_12.htm">
+                    <img src="./img/cc-logo.png">
+                </a>
+            </div>
+        
+            <!--********* Logos RSS y Atom, y enlace a los canales de Noticias *********-->
+            <a rel="alternate" href="feed/canal.rss" target="_blank" type="application/rss+xml">
+                <img src="img/valid-rss.png" alt="enlace RSS">
+            </a>
+            <a rel="alternate" href="feed/canal.atom" target="_blank" type="application/atom+xml">
+                <img src="img/valid-atom.png" alt="enlace Atom">
+            </a>
+            <!--********* Logos RSS y Atom, y enlace a los canales de Noticias *********-->
+
+        </footer>
+
+        <!-- javascript para los botónes del menú, utilicé el ejemplo proporcionado, pero agregue el parámetro botón para mostrar el botón activo de acuerdo a la capa donde se está -->
+        <script type="text/javascript"> 
+        
+            function ShowContent(content, boton) {
+                document.getElementById("inicio").style.display = 'none';
+                document.getElementById("servicio").style.display = 'none';
+                document.getElementById("contacto").style.display = 'none';
+                document.getElementById(content).style.display = 'block';
+                document.getElementById("btnInicio").classList.remove('active');
+                document.getElementById("btnServicio").classList.remove('active');
+                document.getElementById("btnContacto").classList.remove('active');
+                document.getElementById(boton).classList.add("active");
+            } 
+        </script>
+    </body>
+</html>
